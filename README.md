@@ -25,14 +25,37 @@ Untuk menghitung dan menampilkan total keuntungan selama 8 bulan berdasarkan per
 4. Perulangan `for`:Program menggunakan perulangan for sebanyak 8 kali (karena ada 8 bulan).
 Di setiap iterasi, program:
  
-   a)Mengambil persentase laba sesuai indeks bulan dari list persentase_laba.
+   a)Mengambil persentase laba sesuai indeks bulan dari list `persentase_laba`.
   
-   b)Menghitung keuntungan_bulanan = (persentase_laba[bulan] / 100) * modal_awal.
+   b)Menghitung `keuntungan_bulanan = (persentase_laba[bulan] / 100) * modal_awal`.
   
-   c)Menambahkan hasilnya ke total_keuntungan.
+   c)Menambahkan hasilnya ke `total_keuntungan`.
   
-   d)Menampilkan keuntungan setiap bulan dengan perintah print().
+   d)Menampilkan keuntungan setiap bulan dengan perintah `print()`.
 5. Output: Setelah perulangan selesai, program menampilkan total keuntungan selama 8 bulan berdasarkan hasil penjumlahan seluruh laba bulanan.
 
+## LATIHAN 3
+### Tujuan
 
+Untuk menciptakan simulasi operasi mesin ATM yang sederhana, yang memungkinkan pengguna untuk memeriksa saldo, menarik uang tunai, dan keluar dari sistem, dengan menggunakan loop `while`, struktur kondisi `if-elif-else`, serta penanganan kesalahan melalui `try-except` untuk memastikan bahwa input yang diberikan valid.
+## Alur Algoritma
+1. Inisialisasi Saldo Awal: Program menetapkan saldo awal pengguna sebesar Rp 1.000.000, yang disimpan dalam variabel `saldo`.
+2. Perulangan `while True`: Diterapkan untuk menampilkan menu ATM secara berulang hingga pengguna memutuskan untuk keluar. Pada setiap iterasi, program menunjukkan menu utama yakni Cek Saldo, Tarik Tunai dan Keleuar.
+3. Input Pilihan Pengguna: Program meminta pengguna untuk memilih opsi melalui fungsi `input()` dan menyimpannya dalam variabel `pilihan`.
+4. Percabangan `if-elif-else`:
 
+   * Jika `pilihan == "1"`: Program menampilkan saldo saat ini dengan format rupiah (f"Rp {saldo:,}").
+   * Jika `pilihan == "2"`: Program meminta pengguna memasukkan jumlah uang yang ingin ditarik.
+Menggunakan try-except untuk menangani input tidak valid.
+
+       a) Jika jumlah ≤ 0 → tampilkan pesan error.
+     
+       b) ka jumlah > saldo → tampilkan “Saldo tidak mencukupi.”
+     
+       c) Jika valid → saldo dikurangi (saldo -= jumlah_tarik) dan hasil penarikan ditampilkan.
+   
+       d) Jika saldo habis → tampilkan pesan “Saldo Anda telah habis.”
+
+   * Jika `pilihan == "3"`: Program menampilkan pesan keluar dan menghentikan perulangan dengan `break`
+   * Jika input bukan 1, 2, atau 3: tampilkan pesan "Pilihan tidak valid."
+5. Output: Program akan terus beroperasi dan menampilkan saldo terkini atau pesan hasil transaksi, hingga pengguna memutuskan untuk keluar.
