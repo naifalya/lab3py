@@ -24,6 +24,7 @@ Untuk menghitung dan menampilkan total keuntungan selama 8 bulan berdasarkan per
 3. Inisialisasi Total Keuntungan: Sebuah variabel `total_keuntungan` digunakan dengan nilai awal 0, yang berfungsi untuk menyimpan hasil penjumlahan seluruh keuntungan bulanan.
 4. Perulangan `for`:Program menggunakan perulangan for sebanyak 8 kali (karena ada 8 bulan).
 Di setiap iterasi, program:
+ 
   a)Mengambil persentase laba sesuai indeks bulan dari list persentase_laba.
   b)Menghitung keuntungan_bulanan = (persentase_laba[bulan] / 100) * modal_awal.
   c)Menambahkan hasilnya ke total_keuntungan.
