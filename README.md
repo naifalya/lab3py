@@ -50,7 +50,7 @@ Menggunakan try-except untuk menangani input tidak valid.
 
        a) Jika jumlah ≤ 0 → tampilkan pesan error.
      
-       b) ka jumlah > saldo → tampilkan “Saldo tidak mencukupi.”
+       b) Jika jumlah > saldo → tampilkan “Saldo tidak mencukupi.”
      
        c) Jika valid → saldo dikurangi (saldo -= jumlah_tarik) dan hasil penarikan ditampilkan.
    
